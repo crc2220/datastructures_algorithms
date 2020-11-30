@@ -1,0 +1,19 @@
+Sorting
+n^2:
+* Selection:
+    * Go from beginning to end to find the smallest value then swap; i++
+    * Has two arrays: unsorted, sorted
+    * Is faster than bubble
+* Bubble:
+    * adjacent element is compared and swapped
+* Insertion:
+    * Like sorting cards in your hand 
+    * Go from beginning to end comparing next element to previous elements and swapping down if necessary
+* Bucket
+n log(n):
+* Heap
+* Merge
+* Binary
+* Quicksort
+n:
+* Radix

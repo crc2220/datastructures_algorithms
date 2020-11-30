@@ -1,0 +1,23 @@
+Traversal and Tree Height
+Height distance from root node to lowest leaf node
+Height distance from ROOT to any node
+-minHeight (first node without two children)
+-maxHeight (distance from root node to most bottom node)
+
+-isBalanced()
+— is minHeight greater than or equal to (maxHeight - 1)
+
+Traversals
+In Order
+-from left most to right most
+
+preOrder
+-root first
+
+postOrder
+-root last
+
+levelOrder
+-left to right from top level to bottom level
+-breadth first search
+-adds nodes to a queue and pulls it off and checks child nodes

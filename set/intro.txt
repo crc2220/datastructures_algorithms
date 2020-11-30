@@ -1,0 +1,11 @@
+ES6 has a set for us to use
+A collection we can just use an array in javascript 
+-has
+-values
+-add
+-remove (check if it “has” a value first)
+-size
+-union (combines two sets together)
+-intersection (creates a set with similar items from both sets)
+-difference (creates a set with difference between both sets)
+-subset (if a set is in another set)

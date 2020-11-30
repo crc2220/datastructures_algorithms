@@ -1,0 +1,8 @@
+First in first out
+Like a line of people
+-print
+-enqueue
+-dequeue
+-front
+-size
+-isEmpty

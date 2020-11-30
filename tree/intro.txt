@@ -1,0 +1,4 @@
+Visualized as a tree 
+Root-Branches out to other nodes
+Nodes can have other child nodes
+Leaf nodes are at the end and don’t have children

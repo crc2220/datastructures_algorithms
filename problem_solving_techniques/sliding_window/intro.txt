@@ -1,0 +1,21 @@
+You create a "window" 
+Depending on conditions:
+"window" (increases) || (closes.then-> creates a new window)
+-useful for keeping track of a subset of data in array/string
+
+Example problem: longest sequence of unique characters
+"hellothere"
+"lother"
+
+Another example problem: 
+maxSubarraySum 
+Find 2 digits that are next to each other that have the largest sum
+([1,2,5,2,8,1,5],2) -- 2,8 = 10
+Find 4 digits that are next to each other that have the largest sum
+([1,2,5,2,8,1,5],4) -- 2,5,2,8 = 17
+([], 4) = null
+
+You don't need to loop through the next window each time
+You can subtract the previous windowArray[0] value from the old_win_sum
+and 
+add the newest value(windowArray[window.length-1]) from the old_win_sum

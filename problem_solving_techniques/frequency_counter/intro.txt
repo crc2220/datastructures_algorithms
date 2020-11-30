@@ -1,0 +1,16 @@
+Frequency Counter
+collect frequency of values
+
+Example
+* You have two arrays, one with integers, second squared of each from 1st
+* [1,2,3] [1,4,9]
+* Does each item in array 1, when it is squared, have matching item in array 2?
+* 1st example does a double loop which is o of n squared — try to avoid double looping this is time intensive
+* 2nd example does o of n
+* basically creates a lookup object or hash map/hash table
+* { key: (number of times it occurs) }
+* do this for both arrays - twice - 2n
+* then also do a third loop that checks the keys/counts
+    * Can you exit early?
+* So there are three loops === o(3n)
+* see code example a.1

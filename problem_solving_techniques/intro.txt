@@ -1,0 +1,30 @@
+Problem Solving
+1. Understand the Problem 
+    1. Listen carefully
+        1. “Given two arrays that are sorted” — keyword ‘sorted’ pick an algorithm best suited for ‘sorted’ arrays 
+            1. Find value
+                1. Sorted arrays can use binary search — log n
+            2. Find unique
+                1. Multiple pointers to find unique values can work
+        2. “Design also to be run repeatedly on server” — keyword ‘repeatedly’ 
+            1. cache data
+            2. precomputation on initial dataset?
+    2. restate the problem
+    3. what are the inputs
+    4. what should the output be
+    5. can you output what you need based on the inputs
+2. Explore concrete examples
+    1. Start simple -> Progress to complex
+    2. Feel free to draw it out
+3. Account for:
+        1. empty inputs
+        2. invalid inputs 
+        3. different types: string, object, integer/number
+4. Break It Down
+        1. write out steps
+        2. solve/Simplify 
+5. Refactor 
+        1. check result 
+        2. can you understand it?
+        3. improve performance?
+        4. company standards?

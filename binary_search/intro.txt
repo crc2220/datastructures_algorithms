@@ -1,0 +1,4 @@
+Divide it in half look at middle item is it equal, less/greater than
+You have min, max
+While min <= max
+Then do checks and adjust min, max if necessary 

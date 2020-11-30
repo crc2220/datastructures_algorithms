@@ -1,0 +1,4 @@
+-push
+-pop
+-peek
+-length 

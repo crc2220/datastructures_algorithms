@@ -1,0 +1,47 @@
+Each node has 0,1, or 2 children 
+The left child is less than the parent and less than the right child
+Fast lookup
+Fast addition
+Fast removal 
+log(n)
+Each action takes time proportional to the logarithm of the number of items stored in the tree.
+Time decreases over time/n items. 
+
+-add
+If new item is less than i-th node:
+	▪	If left node is null then add new node there
+	▪	If left node isn’t empty then perform search on that node(recursive)
+If new item is more than i-th node:
+	▪	If right node is null then add new node there
+	▪	If right node isn’t empty then perform search on that node(recursive)
+If it’s equal to another node:
+	▪	return null
+
+-findMin
+This would be the left most node
+Set current to the root at first
+While current.left !== null:
+	▪	set current as current.left
+Keep doing that until current.left is null, then return current.data 
+
+-findMax
+Same as above but checking current.right instead
+
+-find
+
+-isPresent
+If data === current.data: return true
+If data is less than current.data: set current to current.left
+If data is greater than current.data: set current to current.right
+At last if nothing is found return false meaning that it wasn’t found
+
+-remove
+Recursive function 
+If you find the node you want to remove then there are four different scenarios 
+p.s. what you return is the value of that node — if it’s null that essentially deletes the node — if C remove pointer and remove reference/value from memory
+1. The found node’s left and right are null: return null
+2. The found node’s left isn’t there: return node.right;
+3. The found node’s right isn’t there: return node.left;
+4. The found node has two children 
+	▪	replace node with right’s most min value
+	▪	or you could replace node with left’s most max value

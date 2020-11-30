@@ -1,0 +1,30 @@
+Send in the priority [‘example’, 3]
+And arrange them according to priority
+If they are the same then the new one gets behind the older one
+
+splice()
+Has three arguments 
+1. Index you want to start at
+2. How many items in array you want to delete
+3. What you want to add
+
+Splice:Add item at position
+array.splice(1, 0, “5”);
+Insert “5” at position 1, and don’t replace anything (0)
+
+slice() vs splice()
+Both return the same thing
+Slice doesn’t modify the array
+Splice does modify the array
+Think the “p” as permanent change 
+
+slice()
+Splice:Copy an array
+Const newVariable = array.slice()
+
+If it’s empty just add it to the queue
+If it’s not empty loop through collection and see if new item’s priority is less than the i-th item’s priority
+If so then splice it to the collection and set added to true
+If it wasn’t added then push it to collection 
+— [[“example”, 5]] now try adding [“another”, 6] 
+— since 6 isn’t less than 5 we need the fallback/flag to add it to end of collection

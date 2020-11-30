@@ -1,0 +1,51 @@
+two sorted arrays, find duplicates
+you have two variables i,j that are indexes 
+i,j shift forwards/backwards depending on a condition
+very efficient for solving problems with minimal space complexity 
+
+sumZero(arr)
+Accepts a sorted array of integers 
+Find first pair whose sum === 0
+Returns that pair …
+Or Returns undefined if pair does not exist
+
+Goes over avoiding double loops/ n squared — again avoid double looping this is resource intensive
+
+sumZero([-4,-3,-2,-1,0,1,2,3,5])
+i - at beginning
+j - at end
+We’ll point i at the beginning and j at then end  
+i points to -4
+j points to 5
+Their sum is 1
+
+Second time 
+I points to -4
+J points to 3
+Their sum is -1
+
+Third time
+I points to -3
+J points to 3
+Their sum is 0
+
+Greater than 0?
+Move j pointer one step to the left
+Equal to 0?
+Return [ arr[i], arr[j] ]
+Less than 0?
+Move I pointed one step to the right
+See code example A.2
+
+countUniqueValues
+Accepts a sorted array
+Returns counts unique values
+
+i, j 
+i stays put while j goes forward to see if next value is different
+If it's different, move i forward and set it's value to what j's value is
+j will keep going until it reaches the end of the array
+If j is > arr.length then determine count (i+1)
+If j is > length of array then you have scanned entire array
+You can exit early if array is empty return 0
+If array has only one item return 1
